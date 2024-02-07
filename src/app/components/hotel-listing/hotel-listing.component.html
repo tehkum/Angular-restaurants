@@ -1,0 +1,14 @@
+<div class="hotel-listing">
+  <h3 class="title-restaurant">Restaurant at zomato</h3>
+  <div class="restaurant-list">
+    @defer (on viewport) {
+    <div *ngFor="let restaurant of hotelDataService.filteredRestaurants">
+      <app-restaurant-card [restaurant]="restaurant"></app-restaurant-card>
+    </div>
+    } @placeholder {
+    <p>Future comments</p>
+    } @loading (minimum 2s) {
+    <p>Loading Restaurant...</p>
+    }
+  </div>
+</div>

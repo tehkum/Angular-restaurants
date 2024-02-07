@@ -1,0 +1,11 @@
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.title-restaurant {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+}

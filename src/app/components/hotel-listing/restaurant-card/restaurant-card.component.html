@@ -1,0 +1,15 @@
+<div class="restaurant-card">
+  <div class="restaurant-card__image">
+    <img [src]="restaurant.restaurant_images" alt="restaurant image" />
+  </div>
+  <div class="restaurant-card__info">
+    <h3 class="restaurant-card__title">{{ restaurant.restaurant_name }}</h3>
+    <p class="restaurant-card__city">{{ restaurant.restaurant_city }}</p>
+    <p class="restaurant-card__address">{{ restaurant.restaurant_address }}</p>
+    <p class="restaurant-card__rating">
+      {{ restaurant.restaurant_rating }}/5<mat-icon class="star-icon"
+        >star</mat-icon
+      >
+    </p>
+  </div>
+</div>
